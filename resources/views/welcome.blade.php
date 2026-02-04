@@ -59,9 +59,13 @@
                                         Edit
                                     </button>
                                 </a>
-                                <button class="px-3 py-1 bg-red-500 text-white cursor-pointer rounded hover:bg-red-600">
-                                    Delete
-                                </button>
+                                <a href="{{route('delete',$post->id)}}">
+                                    <button class="px-3 py-1 bg-red-500 text-white cursor-pointer rounded hover:bg-red-600">
+                                        Delete
+                                    </button>
+                                </a>
+
+
                             </div>
                         </td>
                     </tr>
@@ -70,6 +74,7 @@
                 @endforeach
 
             </table>
+            {{$posts->links()}}
         </div>
 
     </div>

@@ -16,7 +16,7 @@
 
 <body class="bg-[#FDFDFC] px-20  text-[#1b1b18] ">
     <div class="flex items-center pt-2 justify-between">
-        <h1 class="text-2xl uppercase font-bold text-orange-500 ">Create</h1>
+        <h1 class="text-2xl uppercase font-bold text-orange-500 ">edit</h1>
         <a href="/" class="bg-green-600 px-5 py-2 text-white">Back to Home</a>
     </div>
     <div>

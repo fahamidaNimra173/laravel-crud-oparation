@@ -21,19 +21,19 @@
     </div>
     <div>
         <div class="pt-20">
-            <form method="POST" action="{{ route('store')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('update',$ourPost->id)}}" enctype="multipart/form-data">
                 @csrf
                 <div class="flex flex-col gap-3">
 
                     <label for="">Post Name</label>
-                    <input type="text" name="name" value="{{ old('name') }}" class="border border-gray-400 bg-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    <input type="text" name="name" value="{{ $ourPost->name }}" class="border border-gray-400 bg-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">
                     @error('name')
                     <p class="text-red-600 text-[20px] font-mono ">{{$message}}</p>
 
                     @enderror
 
                     <label for="">Description</label>
-                    <textarea type="text" name="description" class="border border-gray-400 bg-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">{{old('description')}}</textarea>
+                    <textarea type="text" name="description" class="border border-gray-400 bg-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">{{ $ourPost->name }}"</textarea>
                     @error('description')
                     <p class="text-red-600 text-[20px] font-mono ">{{$message}}</p>
 

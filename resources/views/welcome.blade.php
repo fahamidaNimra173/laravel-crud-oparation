@@ -54,7 +54,7 @@
                         </td>
                         <td class="px-6 py-4 text-sm border-b">
                             <div class="flex gap-2">
-                                <a href="{{route('edit')}}">
+                                <a href="{{route('edit',$post->id)}}">
                                     <button class="px-3 py-1 bg-blue-500 text-white cursor-pointer rounded hover:bg-blue-600">
                                         Edit
                                     </button>

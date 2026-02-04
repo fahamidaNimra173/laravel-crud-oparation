@@ -12,4 +12,5 @@ Route::get('/test', function () {
 });
 Route::get('/create', [PostController::class, 'create']);
 Route::post('/store', [PostController::class, 'ourFilesStore'])->name('store');
-Route::get('/edit', [PostController::class, 'editPost'])->name('edit');
+Route::get('/edit/{id}', [PostController::class, 'editPost'])->name('edit');
+Route::post('/update/{id}', [PostController::class, 'updatePost'])->name('update');
